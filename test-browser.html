@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>CompareColourContrastRatio : Browser</title>
+    <script src="./index.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const exec = `Browser : compareColourContrastRatio('#ffffff', '#2660a1')`;
+        const result = compareColourContrastRatio('#ffffff', '#2660a1');
+        const expected = 6.421617658233243;
+        document.getElementById('exec').innerHTML = exec;
+        document.getElementById('result').innerHTML = result;
+        document.getElementById('expected').innerHTML = expected;
+        document.getElementById('test').innerHTML = result === expected ? 'OK' : 'NG';
+      });
+    </script>
+  </head>
+  <body>
+    <h1 id="exec">CompareColourContrastRatio</h1>
+    <dl>
+      <dt>Result</dt>
+      <dd id="result">Result</dd>
+      <dt>Expected</dt>
+      <dd id="expected">Expected</dd>
+      <dt>Test</dt>
+      <dd id="test">Test</dd>
+    </dl>
+  </body>
+</html>

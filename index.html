@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compare Colour Contrast Ratio - Neo's GitHub Pages</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon-192x192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon-152x152.png" sizes="152x152">
+    <style>
+      input[type="text"] {
+        width: 100%;
+      }
+    </style>
+    <script src="./index.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const exec = () => {
+          try {
+            const colourA = document.getElementById('colour-a').value;
+            const colourB = document.getElementById('colour-b').value;
+            const result = compareColourContrastRatio(colourA, colourB);
+            document.getElementById('result').value = result;
+          }
+          catch(error) {
+            console.warn('エラー発生', error);
+            document.getElementById('result').value = '比較に失敗しました';
+          }
+        };
+        document.getElementById('exec').addEventListener('click', exec);
+        // Init
+        exec();
+      });
+    </script>
+  </head>
+  <body id="neos21-github-io">
+    <header id="header">
+      <div id="logo"><a href="../index.html">Neo's GitHub Pages</a></div>
+    </header>
+    <main id="main">
+      <section>
+        <h1>Compare Colour Contrast Ratio</h1>
+        <p><a href="https://www.npmjs.com/package/@neos21/compare-colour-contrast-ratio"><img src="https://img.shields.io/npm/v/@neos21/compare-colour-contrast-ratio" alt="NPM Version" title="NPM Version"></a></p>
+        <p>2色の色情報からコントラスト比を導きます。</p>
+        <p><code>#fff</code>・<code>#ffffff</code>・<code>rgb(255, 255, 255)</code>・<code>rgba(255, 255, 255, 1)</code>・<code>hsl(120, 100%, 100%)</code>・<code>hsla(120, 100%, 100%, 1)</code> の形式に対応しています。</p>
+        <dl>
+          <dt>色 A</dt>
+          <dd>
+            <p><input type="text" id="colour-a" value="#ffffff"></p>
+          </dd>
+          <dt>色 B</dt>
+          <dd>
+            <p><input type="text" id="colour-b" value="#2660a1"></p>
+          </dd>
+          <dt>比較実行</dt>
+          <dd>
+            <p><button type="button" id="exec">比較実行</button></p>
+          </dd>
+          <dt>結果</dt>
+          <dd>
+            <p><input type="text" id="result" value="" readonly></p>
+          </dd>
+        </dl>
+        <section>
+          <h2>Author</h2>
+          <p><a href="http://neo.s21.xrea.com/">Neo</a> (<a href="https://twitter.com/Neos21">@Neos21</a>)</p>
+          <ul>
+            <li><a href="https://github.com/Neos21/compare-colour-contrast-ratio">GitHub - compare-colour-contrast-ratio</a></li>
+            <li><a href="https://neos21.github.io/compare-colour-contrast-ratio/">GitHub Pages - Compare Colour Contrast Ratio</a></li>
+            <li><a href="https://www.npmjs.com/package/@neos21/compare-colour-contrast-ratio">npm - @neos21/compare-colour-contrast-ratio</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Links</h2>
+          <ul>
+            <li><a href="http://neo.s21.xrea.com/">Neo's World</a></li>
+            <li><a href="http://neos21.hatenablog.com/">Corredor</a></li>
+            <li><a href="http://neos21.hatenablog.jp/">Murga</a></li>
+            <li><a href="http://neos21.hateblo.jp/">El Mylar</a></li>
+            <li><a href="http://bit-archer.hatenablog.com/">Bit-Archer</a></li>
+            <li><a href="https://github.com/Neos21/">GitHub - Neos21</a></li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer id="footer">
+      <div id="copyright"><small>Copyright &copy; 2016-2019 <a href="../index.html">Neo</a>, All rights reserved.</small></div>
+    </footer>
+  </body>
+</html>
