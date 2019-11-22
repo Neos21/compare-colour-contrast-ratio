@@ -1,4 +1,4 @@
-require(['index'], (compareColourContrastRatio) => {
+require(['main'], (compareColourContrastRatio) => {
   const exec = `AMD : compareColourContrastRatio('#ffffff', '#2660a1')`;
   const result = compareColourContrastRatio('#ffffff', '#2660a1');
   const expected = 6.421617658233243;

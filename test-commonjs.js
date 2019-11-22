@@ -1,4 +1,4 @@
-const compareColourContrastRatio = require('./index');
+const compareColourContrastRatio = require('./main');
 
 const result = compareColourContrastRatio('#ffffff', '#2660a1');
 const expected = 6.421617658233243;

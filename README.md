@@ -15,7 +15,7 @@ __[Demo (GitHub Pages)](https://neos21.github.io/compare-colour-contrast-ratio/)
 [Neo](http://neo.s21.xrea.com/) ([@Neos21](https://twitter.com/Neos21))
 
 - [GitHub - compare-colour-contrast-ratio](https://github.com/Neos21/compare-colour-contrast-ratio)
-- [GitHub Pages - Compare Colour Contrast Ratio](https://neos21.github.io/compare-colour-contrast-ratio/)
+- [GitHub Pages - Compare Colour Contrast Ratio : @neos21/compare-colour-contrast-ratio](https://neos21.github.io/compare-colour-contrast-ratio/)
 - [npm - @neos21/compare-colour-contrast-ratio](https://www.npmjs.com/package/@neos21/compare-colour-contrast-ratio)
 
 
