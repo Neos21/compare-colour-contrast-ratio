@@ -12,7 +12,7 @@ __[Demo (GitHub Pages)](https://neos21.github.io/compare-colour-contrast-ratio/)
 
 ## Author
 
-[Neo](http://neo.s21.xrea.com/) ([@Neos21](https://twitter.com/Neos21))
+[Neo](http://neo.s21.xrea.com/)
 
 - [GitHub - compare-colour-contrast-ratio](https://github.com/Neos21/compare-colour-contrast-ratio)
 - [GitHub Pages - Compare Colour Contrast Ratio : @neos21/compare-colour-contrast-ratio](https://neos21.github.io/compare-colour-contrast-ratio/)
