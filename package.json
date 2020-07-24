@@ -1,6 +1,6 @@
 {
   "name": "@neos21/compare-colour-contrast-ratio",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Compare Colour Contrast Ratio",
   "main": "main.js",
   "scripts": {
