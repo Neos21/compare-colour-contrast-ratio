@@ -1,6 +1,6 @@
 # Compare Colour Contrast Ratio : @neos21/compare-colour-contrast-ratio
 
-[![NPM Version](https://img.shields.io/npm/v/@neos21/compare-colour-contrast-ratio.svg)](https://www.npmjs.com/package/@neos21/compare-colour-contrast-ratio)
+[![NPM Version](https://img.shields.io/npm/v/@neos21/compare-colour-contrast-ratio.svg)](https://www.npmjs.com/package/@neos21/compare-colour-contrast-ratio) [![GPR Version](https://img.shields.io/github/package-json/v/neos21/compare-colour-contrast-ratio?label=github)](https://github.com/Neos21/compare-colour-contrast-ratio/packages/327440)
 
 2色の色情報からコントラスト比を導きます。
 
