@@ -2,7 +2,6 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Compare Colour Contrast Ratio : @neos21/compare-colour-contrast-ratio - Neo's GitHub Pages</title>
     <link rel="stylesheet" href="/styles.css">
@@ -10,36 +9,38 @@
     <link rel="icon" href="/favicon-192x192.png" sizes="192x192" type="image/png">
     <link rel="apple-touch-icon" href="/apple-touch-icon-152x152.png" sizes="152x152">
     <style>
-      input[type="text"] {
-        width: 100%;
-      }
+
+input[type="text"] {
+  width: 100%;
+}
+
     </style>
     <script src="./main.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const exec = () => {
-          try {
-            const colourA = document.getElementById('colour-a').value;
-            const colourB = document.getElementById('colour-b').value;
-            const result = compareColourContrastRatio(colourA, colourB);
-            document.getElementById('result').value = result;
-          }
-          catch(error) {
-            console.warn('エラー発生', error);
-            document.getElementById('result').value = '比較に失敗しました';
-          }
-        };
-        document.getElementById('exec').addEventListener('click', exec);
-        // Init
-        exec();
-      });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const exec = () => {
+    try {
+      const colourA = document.getElementById('colour-a').value;
+      const colourB = document.getElementById('colour-b').value;
+      const result = compareColourContrastRatio(colourA, colourB);
+      document.getElementById('result').value = result;
+    }
+    catch(error) {
+      console.warn('エラー発生', error);
+      document.getElementById('result').value = '比較に失敗しました';
+    }
+  };
+  document.getElementById('exec').addEventListener('click', exec);
+  // Init
+  exec();
+});
+
     </script>
   </head>
-  <body id="neos21-github-io">
-    <header id="header">
-      <div id="logo"><a href="../index.html">Neo's GitHub Pages</a></div>
-    </header>
-    <main id="main">
+  <body>
+    <header><a href="/index.html">Neo's GitHub Pages</a></header>
+    <main>
       <section>
         <h1>Compare Colour Contrast Ratio</h1>
         <p>
@@ -88,8 +89,6 @@
         </section>
       </section>
     </main>
-    <footer id="footer">
-      <div id="copyright"><small>Copyright &copy; 2016-2020 <a href="../index.html">Neo</a>, All rights reserved.</small></div>
-    </footer>
+    <footer>Copyright &copy; 2016-2020 <a href="/index.html">Neo</a>, All rights reserved.</footer>
   </body>
 </html>
